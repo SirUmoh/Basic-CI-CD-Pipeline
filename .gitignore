@@ -1,6 +1,0 @@
-# Virtual Environment
-venv/
-
-# Compiled Files
-*.pyc
-__pycache__/
