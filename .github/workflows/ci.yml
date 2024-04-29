@@ -23,12 +23,11 @@ jobs:
           python -m venv venv
           source venv/bin/activate
           pip install Flask
-          pip install pytest
-          pip install coverage
+          pip install pytest coverage
 
       - name: Run Tests
         run: |
           source venv/bin/activate
-          pytest
-          coverage
+          coverage run -m pytest
+          coverage report
           echo "Tests passed"
