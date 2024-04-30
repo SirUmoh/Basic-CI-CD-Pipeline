@@ -4,3 +4,5 @@ venv/
 # Compiled Files
 *.pyc
 __pycache__/
+
+.coverage
