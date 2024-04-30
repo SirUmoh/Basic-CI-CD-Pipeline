@@ -26,7 +26,7 @@ jobs:
           pip install pytest coverage
 
       - name: Set Python Path
-        uses: export PYTHONPATH=${PYTHONPATH}:.
+        run: export PYTHONPATH=${PYTHONPATH}:.
 
       - name: Run Tests
         run: |
