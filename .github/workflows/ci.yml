@@ -31,6 +31,7 @@ jobs:
 
       - name: Run Tests
         run: |
+          python -m venv venv
           source venv/bin/activate
           cd /home/runner/work/Basic-CI-CD-Pipeline/Basic-CI-CD-Pipeline
           pytest tests/test_app.py 
