@@ -38,6 +38,7 @@ jobs:
       - name: Run Tests
         run: |
           source venv/bin/activate
+          pip list  # Lists installed Python packages
           ls -la
           pytest tests/test_app.py 
           echo "Tests passed"
