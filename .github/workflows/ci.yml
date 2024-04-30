@@ -28,6 +28,7 @@ jobs:
         run: |
           export PYTHONPATH=${PYTHONPATH}:./Basic-CI-CD-Pipeline
           cd /home/runner/work/Basic-CI-CD-Pipeline/Basic-CI-CD-Pipeline
+          ls -la
 
       - name: Run Tests
         run: |
