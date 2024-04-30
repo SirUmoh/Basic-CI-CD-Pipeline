@@ -24,8 +24,10 @@ jobs:
           source venv/bin/activate
           pip install flask pytest coverage
 
-      - name: Set Python Path
-        run: export PYTHONPATH=${PYTHONPATH}:.
+      - name: Set Python Path and Working Directory
+        run: |
+          cd Basic-CI-CD-Pipeline
+          export PYTHONPATH=${PYTHONPATH}:./Basic-CI-CD-Pipeline
 
       - name: Run Tests
         run: |
