@@ -1,0 +1,5 @@
+[MASTER]
+ignore = migrations  # Directories to ignore
+
+[BASIC]
+good-names = i, j, k  # Allowed variable names

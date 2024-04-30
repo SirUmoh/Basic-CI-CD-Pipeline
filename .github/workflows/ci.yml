@@ -28,19 +28,12 @@ jobs:
       - name: Set Python Path and Working Directory
         run: |
           cd /home/runner/work/Basic-CI-CD-Pipeline/Basic-CI-CD-Pipeline
-          export PYTHONPATH=${PYTHONPATH}:.
-
-      - name: Test Manual Import
-        run: |
-          source venv/bin/activate
-        
+          export PYTHONPATH=${PYTHONPATH}:.     
 
       - name: Run Tests
         run: |
           source venv/bin/activate
           pip list  # Lists installed Python packages
-          pwd
-          ls -la
           pip install pytest pytest-cov
           pytest tests/test_app.py --doctest-modules --junitxml=junit/test-results.xml --cov=com --cov-report=xml --cov-report=html  
           echo "Tests passed"

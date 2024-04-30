@@ -1,0 +1,24 @@
+name: Lint Code
+
+on:
+  push:
+    branches:
+      - main
+
+jobs:
+  lint:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v3
+
+      - name: Set up Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+    
+      - name: Install Linting Tools
+        run: pip install flake8  # Install Flake8
+
+      - name: Run Flake8 Linting
+        run: flake8 .  # Lint the entire project
