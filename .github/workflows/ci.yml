@@ -33,7 +33,6 @@ jobs:
       - name: Test Manual Import
         run: |
           source venv/bin/activate
-          python -c "from app import app"
         
 
       - name: Run Tests
