@@ -29,6 +29,12 @@ jobs:
           cd /home/runner/work/Basic-CI-CD-Pipeline/Basic-CI-CD-Pipeline
           export PYTHONPATH=${PYTHONPATH}:.
 
+      - name: Test Manual Import
+        run: |
+          source venv/bin/activate
+          python -c "from app import app"
+        
+
       - name: Run Tests
         run: |
           source venv/bin/activate
