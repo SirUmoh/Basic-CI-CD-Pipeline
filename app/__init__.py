@@ -5,3 +5,5 @@ print("Initializing the 'app' package")
 
 # Importing the main Flask application from 'main.py'
 from .app import app  # Importing the Flask app to make it accessible at the package level
+
+__all__ = ['app']
