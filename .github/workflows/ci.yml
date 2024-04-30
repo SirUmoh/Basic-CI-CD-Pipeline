@@ -26,9 +26,8 @@ jobs:
 
       - name: Set Python Path and Working Directory
         run: |
-          export PYTHONPATH=${PYTHONPATH}:./Basic-CI-CD-Pipeline
           cd /home/runner/work/Basic-CI-CD-Pipeline/Basic-CI-CD-Pipeline
-          ls -la
+          export PYTHONPATH=${PYTHONPATH}:.
 
       - name: Run Tests
         run: |
