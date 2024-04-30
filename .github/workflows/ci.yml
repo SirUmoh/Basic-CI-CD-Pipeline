@@ -30,6 +30,7 @@ jobs:
 
       - name: Run Tests
         run: |
+          ls -la
           source venv/bin/activate
           pytest tests/test_app.py 
           echo "Tests passed"
